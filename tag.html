@@ -1,0 +1,178 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="alternate" hreflang="en" href="tag.html"><link rel="alternate" hreflang="zh-Hant" href="zh-Hant/tag.html">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Tag a game · GD Ruse30</title>
+<meta name="description" content="Tag a game from a local recording you own">
+<meta name="theme-color" content="#0a101c"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css?v=6a2eb8v3tag">
+<script>try{var t=localStorage.getItem('gdr-theme');if(t&&t!=='auto')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="stylesheet" href="assets/tagger.css?v=4">
+</head>
+<body class="nojs"><a class="sr" href="#main">Skip to content</a>
+<header class="topbar"><div class="wrap"><a class="logo" href="index.html"><svg viewBox='0 0 32 32' aria-hidden='true'><rect width='32' height='32' rx='9' fill='#2ff0d6'/><circle cx='16' cy='16' r='9.5' fill='none' stroke='#04201d' stroke-width='2.2'/><path d='M6.5 16h19M16 6.5v19M9.3 9.3c3.4 3.6 3.4 9.8 0 13.4M22.7 9.3c-3.4 3.6-3.4 9.8 0 13.4' fill='none' stroke='#04201d' stroke-width='1.8'/></svg><span>GD Ruse30<small>U16 Boys · Wed</small></span></a>
+<nav class="nav" aria-label="Main"><a href='index.html'><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='3' y='3' width='7' height='9' rx='2'/><rect x='14' y='3' width='7' height='5' rx='2'/><rect x='14' y='12' width='7' height='9' rx='2'/><rect x='3' y='16' width='7' height='5' rx='2'/></svg><span>Dashboard</span></a><a href='games.html'><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round'><circle cx='12' cy='12' r='9'/><path d='M3 12h18M12 3v18M5.6 5.6c3 3 3 9.8 0 12.8M18.4 5.6c-3 3-3 9.8 0 12.8'/></svg><span>Games</span></a><a href='players.html'><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='9' cy='8' r='3.5'/><path d='M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5'/><circle cx='17' cy='9' r='2.5'/><path d='M16.5 14.6c2.6.2 4.4 1.9 5 4.9'/></svg><span>Players</span></a><a href='tag.html' aria-current=page><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'/><path d='M9.5 12v-2.2l5 2.2-5 2.2z' fill='currentColor' stroke='none'/></svg><span>Tag</span></a><a href='glossary.html'><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z'/><path d='M4 19V5M8 7h7M8 11h5'/></svg><span>Glossary</span></a></nav><span class="recpill" data-tip="Whole Season 2 record · C1 + B3">S2 · 4–1</span>
+<a class="langbtn" href="zh-Hant/tag.html" hreflang="zh-Hant" lang="zh-Hant" data-lang="zh" aria-label="繁體中文" onclick="try{localStorage.setItem('gdr-lang-v2','zh')}catch(e){}">中文</a><button class="themebtn" id="themebtn" type="button" aria-label="Theme: auto"><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><circle cx='12' cy='12' r='8.5'/><path d='M12 3.5a8.5 8.5 0 0 1 0 17z' fill='currentColor'/></svg></button></div></header>
+<main id="main" class="tagger-main"><div class="wrap">
+  <div class="phead" style="margin-bottom:12px"><div><h1>Tag a game</h1></div></div>
+  <div class="note"><span class="ni">!</span><span><b>Legal:</b> Use only video recordings you own. Never load Glory League video files.</span></div>
+  <div class="note tagger-banner" id="tagger-origin-banner" hidden><span class="ni">!</span><span></span></div>
+  <div class="note tagger-banner" id="tagger-storage-banner" hidden><span class="ni">!</span><span></span></div>
+  <form class="tagger-meta" id="tagger-meta" autocomplete="off">
+    <label>Date <input type="date" name="date" id="tagger-date"></label>
+    <label>Code (YYYYMMDD) <input type="text" name="code" id="tagger-code" inputmode="numeric" pattern="[0-9]{8}" placeholder="20260923"></label>
+    <label>Opponent <input type="text" name="opp" id="tagger-opp" placeholder="Splash Brothers"></label>
+    <label>Official us <input type="number" name="us" id="tagger-us" min="0" placeholder="41"></label>
+    <label>Official them <input type="number" name="them" id="tagger-them" min="0" placeholder="23"></label>
+  </form>
+  <div class="tagger-workspace">
+    <section class="card tagger-media" aria-label="Video player">
+      <div class="tagger-file"><label>Video file <input type="file" id="tagger-video-file" accept="video/mp4,video/*"></label></div>
+      <div class="note tagger-banner" id="tagger-video-error" hidden><span class="ni">!</span><span></span></div>
+      <div class="tagger-video-wrap"><span class="tagger-video-placeholder" id="tagger-video-placeholder">Choose a local MP4 you own</span>
+        <video id="tagger-video" playsinline preload="metadata" controls></video></div>
+      <div class="tagger-transport">
+        <button type="button" class="btn" id="tagger-play" title="Play / pause (Space)">Play</button>
+        <button type="button" class="btn ghost" id="tagger-seek-back3" data-seek="-3" title="Seek -3s (Left arrow)">-3s</button>
+        <button type="button" class="btn ghost" id="tagger-seek-back1" data-seek="-1" title="Seek -1s (,)">-1s</button>
+        <button type="button" class="btn ghost" id="tagger-seek-fwd1" data-seek="1" title="Seek +1s (.)">+1s</button>
+        <button type="button" class="btn ghost" id="tagger-seek-fwd3" data-seek="3" title="Seek +3s (Right arrow)">+3s</button>
+        <button type="button" class="btn ghost" id="tagger-speed" title="Speed [ / ]">1.0x</button>
+        <button type="button" class="btn ghost" id="tagger-prev-tag" title="Previous tag (K)">Prev tag</button>
+        <button type="button" class="btn ghost" id="tagger-next-tag" title="Next tag (L)">Next tag</button>
+        <span class="tagger-time" id="tagger-time">0:00</span>
+      </div>
+    </section>
+    <section class="card tagger-pad" aria-label="Tag pad">
+      <div class="tagger-pad__head"><h2>Tag pad</h2>
+        <div class="tagger-team" id="tagger-team" role="group" aria-label="Team">
+          <button type="button" class="chip2" data-team-side="gd" aria-pressed="true">GD RUSE30</button>
+          <button type="button" class="chip2" data-team-side="opp" aria-pressed="false">Opponent</button>
+        </div>
+      </div>
+      <div class="tagger-status" id="tagger-pad-status" aria-live="polite"></div>
+      <div class="muted small">Jersey</div>
+      <div class="tagger-jerseys" id="tagger-jerseys">
+        <button type="button" class="chip2" aria-pressed="false">#7</button>
+        <button type="button" class="chip2" aria-pressed="false">#17</button>
+        <button type="button" class="chip2" aria-pressed="false">#19</button>
+        <button type="button" class="chip2" aria-pressed="false">#23</button>
+        <button type="button" class="chip2" aria-pressed="false">#24</button>
+        <button type="button" class="chip2" aria-pressed="false">#30</button>
+        <button type="button" class="chip2" aria-pressed="false">#74</button>
+        <button type="button" class="chip2" data-team="1" aria-pressed="false">Team</button>
+      </div>
+      <form class="tagger-opp-entry" id="tagger-opp-entry" hidden autocomplete="off">
+        <label class="small muted" for="tagger-opp-num">Opponent #</label>
+        <input type="text" id="tagger-opp-num" inputmode="numeric" maxlength="4" placeholder="e.g. 12">
+        <input type="text" id="tagger-opp-name" maxlength="24" placeholder="Name (optional)">
+        <button type="submit" class="btn ghost">Use #</button>
+      </form>
+      <div class="muted small">Event</div>
+      <div class="tagger-events" id="tagger-events">
+        <button type="button" class="chip2 tagger-ev is-good" data-ev="1PT" data-event="1 POINT" aria-pressed="false">1PT</button>
+        <button type="button" class="chip2 tagger-ev is-miss" data-ev="1PM" data-event="1 POINT MISS" aria-pressed="false">1PM</button>
+        <button type="button" class="chip2 tagger-ev is-good" data-ev="2PT" data-event="2 POINT" aria-pressed="false">2PT</button>
+        <button type="button" class="chip2 tagger-ev is-miss" data-ev="2PM" data-event="2 POINT MISS" aria-pressed="false">2PM</button>
+        <button type="button" class="chip2 tagger-ev is-good" data-ev="3PT" data-event="3 POINT" aria-pressed="false">3PT</button>
+        <button type="button" class="chip2 tagger-ev is-miss" data-ev="3PM" data-event="3 POINT MISS" aria-pressed="false">3PM</button>
+        <button type="button" class="chip2 tagger-ev is-good" data-ev="AST" data-event="ASSIST" aria-pressed="false">AST</button>
+        <button type="button" class="chip2 tagger-ev is-good" data-ev="OREB" data-event="OFFENSIVE REBOUND" aria-pressed="false">OREB</button>
+        <button type="button" class="chip2 tagger-ev is-good" data-ev="DREB" data-event="DEFENSIVE REBOUND" aria-pressed="false">DREB</button>
+        <button type="button" class="chip2 tagger-ev is-good" data-ev="STL" data-event="STEAL" aria-pressed="false">STL</button>
+        <button type="button" class="chip2 tagger-ev is-good" data-ev="BLK" data-event="BLOCK" aria-pressed="false">BLK</button>
+        <button type="button" class="chip2 tagger-ev is-miss" data-ev="TO" data-event="TURNOVER" aria-pressed="false">TO</button>
+      </div>
+      <div class="tagger-pad__actions">
+        <button type="button" class="btn ghost" id="tagger-undo">Undo</button>
+        <button type="button" class="btn ghost" id="tagger-latch" title="Latch current video time (G)">Latch (G)</button>
+        <button type="button" class="btn ghost" id="tagger-ast-before" title="Insert ASSIST before last made 2PT/3PT (Shift+A)">+AST before FG</button>
+      </div>
+    </section>
+    <nav class="tabs tagger-tabnav" role="tablist" data-tabs="tagger" aria-label="Tagger panels">
+      <button type="button" role="tab" aria-selected="true" aria-controls="p-pbp">PBP log</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="p-box">Box score</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="p-game">Game &amp; export</button>
+    </nav>
+    <div class="tagger-panels-wrap">
+      <section class="card tagger-pbp" id="p-pbp" role="tabpanel">
+        <div class="tagger-chead"><h2>PBP log <span class="muted small" id="tagger-pbp-count">(0)</span></h2><span class="muted small">Oldest at top</span></div>
+        <div class="note tagger-toast" id="tagger-toast" hidden><span class="ni">!</span><span id="tagger-toast-text"></span><button type="button" class="btn ghost tagger-toast-undo" id="tagger-toast-undo" hidden>Undo</button></div>
+        <ul class="tagger-pbp-list" id="tagger-pbp-list"><li class="tagger-empty"><b>No tags yet</b><span>Tags appear here in chronological order.</span></li></ul>
+      </section>
+      <section class="card tagger-box" id="p-box" role="tabpanel" hidden>
+        <div class="tagger-chead"><h2>Box score</h2>
+          <div class="seg" id="tagger-box-team" role="group" aria-label="Box score team">
+            <button type="button" data-box-side="gd" aria-pressed="true">GD RUSE30</button>
+            <button type="button" data-box-side="opp" aria-pressed="false">Opponent</button>
+          </div>
+        </div>
+        <div class="note tagger-banner" id="tagger-score-mismatch" hidden><span class="ni">!</span><span></span></div>
+        <div class="tablewrap"><table class="st box sortable" id="tagger-box-table">
+          <thead><tr><th scope="col"><button type="button">Player</button></th><th scope="col"><button type="button">PTS</button></th><th scope="col"><button type="button">FGM-A</button></th><th scope="col"><button type="button">2P</button></th><th scope="col"><button type="button">3P</button></th><th scope="col"><button type="button">FT</button></th><th scope="col"><button type="button">REB</button></th><th scope="col"><button type="button">AST</button></th><th scope="col"><button type="button">STL</button></th><th scope="col"><button type="button">BLK</button></th><th scope="col"><button type="button">TO</button></th><th scope="col"><button type="button">PF</button></th></tr></thead>
+          <tbody id="tagger-box-body">
+            <tr><td data-s="7"><span class="jn">7</span> Hanze Guo</td><td data-s="0">0</td><td data-s="0">0-0</td><td data-s="0">0-0</td><td data-s="0">0-0</td><td data-s="0">0-0</td><td data-s="0">0</td><td data-s="0">0</td><td data-s="0">0</td><td data-s="0">0</td><td data-s="0">0</td>
+              <td data-s="0"><span class="tagger-pf" aria-label="Personal fouls stepper"><button type="button" title="PF minus">-</button><span>0</span><button type="button" title="PF plus">+</button></span></td></tr>
+            <tr><td data-s="17"><span class="jn">17</span> Ryan Zhang</td><td data-s="0">0</td><td data-s="0">0-0</td><td data-s="0">0-0</td><td data-s="0">0-0</td><td data-s="0">0-0</td><td data-s="0">0</td><td data-s="0">0</td><td data-s="0">0</td><td data-s="0">0</td><td data-s="0">0</td>
+              <td data-s="0"><span class="tagger-pf" aria-label="Personal fouls stepper"><button type="button" title="PF minus">-</button><span>0</span><button type="button" title="PF plus">+</button></span></td></tr>
+          </tbody>
+          <tfoot id="tagger-box-foot"><tr><td>Team</td><td>0</td><td>0-0</td><td>0-0</td><td>0-0</td><td>0-0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tfoot>
+        </table></div>
+      </section>
+      <section class="card tagger-export" id="p-game" role="tabpanel" hidden>
+        <div class="tagger-chead"><h2>Game &amp; export</h2></div>
+        <div class="tagger-export-actions">
+          <button type="button" class="btn ghost" id="tagger-export-csv">Export PBP CSV</button>
+          <button type="button" class="btn ghost" id="tagger-export-box">Export box JSON</button>
+          <button type="button" class="btn" id="tagger-export-session">Export session JSON</button>
+          <button type="button" class="btn ghost" id="tagger-import-session">Import session JSON</button>
+          <button type="button" class="btn ghost" id="tagger-import-csv">Import PBP CSV</button>
+          <input type="file" id="tagger-import-session-file" accept=".json,application/json" hidden>
+          <input type="file" id="tagger-import-csv-file" accept=".csv,text/csv" hidden>
+        </div>
+        <div class="tagger-roster-editor" id="tagger-roster-editor">
+          <div class="tagger-chead"><h3>Tonight&apos;s GD Ruse30 roster</h3><button type="button" class="btn ghost" id="tagger-save-default-roster">Save as default roster</button></div>
+          <p class="muted small" style="margin-bottom:8px">Activate who is playing tonight and set per-game jersey numbers. Person ID stays constant across games.</p>
+          <div class="note tagger-banner" id="tagger-roster-dup" hidden><span class="ni">!</span><span></span></div>
+          <div class="tagger-roster-list" id="tagger-roster-list"></div>
+        </div>
+        <details class="howinfo tagger-shortcuts"><summary><span class="ii" aria-hidden="true">i</span><span>Keyboard shortcuts</span></summary>
+          <div>
+            <p class="muted small tagger-shortcuts__note">Active whenever focus is not in a text input, select, or editable field (except Undo). Fouls use live box PF steppers only (no PBP foul rows).</p>
+            <div class="tablewrap"><table class="st tagger-hotkey-table">
+              <thead><tr><th>Key</th><th>Action</th></tr></thead>
+              <tbody>
+                <tr><td><kbd>Space</kbd></td><td>Play / pause</td></tr>
+                <tr><td><kbd>&larr;</kbd> / <kbd>&rarr;</kbd></td><td>Seek &minus;3s / +3s</td></tr>
+                <tr><td><kbd>,</kbd> / <kbd>.</kbd></td><td>Seek &minus;1s / +1s</td></tr>
+                <tr><td><kbd>[</kbd> / <kbd>]</kbd></td><td>Speed down / up (0.5&times; &hellip; 2.0&times;, not S/F)</td></tr>
+                <tr><td><kbd>K</kbd> / <kbd>L</kbd></td><td>Previous / next tag</td></tr>
+                <tr><td><kbd>Y</kbd></td><td>Edit selected (or most recent) tag</td></tr>
+                <tr><td><kbd>G</kbd></td><td>Latch timestamp / add-stat</td></tr>
+                <tr><td><kbd>S</kbd></td><td><strong>STEAL</strong></td></tr>
+                <tr><td><kbd>D</kbd></td><td><strong>DEFENSIVE REBOUND</strong></td></tr>
+                <tr><td><kbd>O</kbd></td><td>OFFENSIVE REBOUND</td></tr>
+                <tr><td><kbd>A</kbd> / <kbd>Shift+A</kbd></td><td>ASSIST (<kbd>Shift+A</kbd> before last made 2PT/3PT)</td></tr>
+                <tr><td><kbd>B</kbd></td><td>BLOCK</td></tr>
+                <tr><td><kbd>T</kbd></td><td>TURNOVER</td></tr>
+                <tr><td><kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd></td><td>Made 1PT / 2PT / 3PT</td></tr>
+                <tr><td><kbd>Shift+1</kbd> / <kbd>2</kbd> / <kbd>3</kbd></td><td>Missed 1PT / 2PT / 3PT</td></tr>
+                <tr><td><kbd>M</kbd></td><td>Flip pending or last-3s shot made &harr; miss</td></tr>
+                <tr><td><kbd>Tab</kbd></td><td>Toggle GD RUSE30 / opponent</td></tr>
+                <tr><td><kbd>Z</kbd> or <kbd>Ctrl/Cmd+Z</kbd></td><td>Undo</td></tr>
+                <tr><td><kbd>Delete</kbd></td><td>Delete selected tag</td></tr>
+                <tr><td><kbd>Escape</kbd></td><td>Cancel pending latch or close editor</td></tr>
+                <tr><td><kbd>C</kbd></td><td>Toast only: clips are out of MVP</td></tr>
+              </tbody>
+            </table></div>
+          </div>
+        </details>
+      </section>
+    </div>
+  </div>
+</div></main>
+<footer><div class="wrap"><span>GD Ruse30 · Glory League · Wednesday</span><span>Stats from official box scores · Private team page</span></div></footer>
+<nav class="tabbar" aria-label="Main"><a href='index.html'><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='3' y='3' width='7' height='9' rx='2'/><rect x='14' y='3' width='7' height='5' rx='2'/><rect x='14' y='12' width='7' height='9' rx='2'/><rect x='3' y='16' width='7' height='5' rx='2'/></svg><span>Dashboard</span></a><a href='games.html'><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round'><circle cx='12' cy='12' r='9'/><path d='M3 12h18M12 3v18M5.6 5.6c3 3 3 9.8 0 12.8M18.4 5.6c-3 3-3 9.8 0 12.8'/></svg><span>Games</span></a><a href='players.html'><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='9' cy='8' r='3.5'/><path d='M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5'/><circle cx='17' cy='9' r='2.5'/><path d='M16.5 14.6c2.6.2 4.4 1.9 5 4.9'/></svg><span>Players</span></a><a href='tag.html' aria-current=page><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'/><path d='M9.5 12v-2.2l5 2.2-5 2.2z' fill='currentColor' stroke='none'/></svg><span>Tag</span></a><a href='glossary.html'><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z'/><path d='M4 19V5M8 7h7M8 11h5'/></svg><span>Glossary</span></a></nav>
+<script src="assets/app.js?v=6a2eb8v3tag"></script>
+<script type="module" src="js/app.js"></script>
+</body></html>

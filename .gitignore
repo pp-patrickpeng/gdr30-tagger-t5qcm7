@@ -1,0 +1,9 @@
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.avi
+*.m4v
+.DS_Store
+gdr30_session_*.json
+_legacy_m1_shell/
